@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fefefe;
+}
+
+header {
+  background: linear-gradient(90deg, #ff6b6b, #ffcc70);
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 2em;
+}
+
+#searchBox {
+  padding: 10px;
+  width: 50%;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.recipe-card {
+  background: white;
+  margin: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+  border: 2px solid #ffcc70;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.recipe-detail {
+  display: none;
+  padding: 20px;
+  background: #fff8e1;
+  border-radius: 15px;
+  margin: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.recipe-detail h2 {
+  color: #ff6b6b;
+}
+
+.recipe-detail p {
+  margin: 10px 0;
+}
+
+.back-btn, .like-btn {
+  background: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s;
+}
+
+.back-btn:hover, .like-btn:hover {
+  background: #ff4a4a;
+}
+
+.like-btn.liked {
+  background: #4CAF50;
+}

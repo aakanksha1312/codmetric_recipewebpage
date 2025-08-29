@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍴 Delicious Recipes</h1>
+    <input type="text" id="searchBox" placeholder="Search recipes...">
+  </header>
+
+  <!-- Recipes List -->
+  <div class="recipe-list" id="recipeList">
+    <div class="recipe-card" onclick="showRecipe('burger')">
+      <img src="images/burger.jpg" alt="Burger">
+      <h3>Burger</h3>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('cake')">
+      <img src="images/cake.jpg" alt="Cake">
+      <h3>Cake</h3>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('dosa')">
+      <img src="images/dosa.jpg" alt="Dosa">
+      <h3>Dosa</h3>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('salad')">
+      <img src="images/salad.jpg" alt="Salad">
+      <h3>Salad</h3>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('noodles')">
+      <img src="images/noodles.jpg" alt="Noodles">
+      <h3>Noodles</h3>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('friedrice')">
+      <img src="images/friedrice.jpg" alt="Fried Rice">
+      <h3>Fried Rice</h3>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('icecream')">
+      <img src="images/icecream.jpg" alt="Ice Cream">
+      <h3>Ice Cream</h3>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('pasta')">
+      <img src="images/pasta.jpg" alt="Pasta">
+      <h3>Pasta</h3>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('pizza')">
+      <img src="images/pizza.jpg" alt="Pizza">
+      <h3>Pizza</h3>
+    </div>
+    <div class="recipe-card" onclick="showRecipe('sandwich')">
+      <img src="images/sandwich.jpg" alt="Sandwich">
+      <h3>Sandwich</h3>
+    </div>
+  </div>
+
+  <!-- Recipe Detail -->
+  <div class="recipe-detail" id="recipeDetail">
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+    <div id="recipeContent"></div>
+    <button class="like-btn" onclick="toggleLike()">❤ Like</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
